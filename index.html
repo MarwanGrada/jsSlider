@@ -1,0 +1,105 @@
+<!-- <!doctype html> -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chart challenge</title>
+
+  <meta name="author" content="Marwan">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheet.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"> </script>
+</head>
+
+<body>
+  <div class="headerOne">
+    <h1>Calculating the coverage you may need</h1>
+    <p>We all have diffrent needs. The right amount of coverage for you depends on how much you'd like to leave behind.
+      Take a look at some average annual costs and use the sliders below to think about how much you might need.</p>
+  </div>
+
+
+  <div class="container">
+    <div class="left-side">
+
+      <div class="slidecontainer">
+        <div class="sliderLabel">
+          <p>$0</p>
+          <p><span class="boldSpan">Funeral:</span>$<span id="demo"></span></p>
+          <p>$100k</p>
+        </div>
+        <input class="slider slider-progress" type="range" min="0" max="100000" value="0" id="myRange">
+      </div>
+      <div class="slidecontainer">
+        <div class="sliderLabel">
+          <p>$0</p>
+          <p><span class="boldSpan">Funeral:</span>$<span id="demo2"></span></p>
+          <p>$100k</p>
+        </div>
+        <input class="slider2 slider-progress" type="range" min="0" max="100000" value="0" id="myRange2">
+      </div>
+      <div class="slidecontainer">
+        <div class="sliderLabel">
+          <p>$0</p>
+          <p><span class="boldSpan">Funeral:</span>$<span id="demo3"></span></p>
+          <p>$100k</p>
+        </div>
+        <input class="slider3 slider-progress" type="range" min="0" max="100000" value="0" id="myRange3">
+      </div>
+      <div class="slidecontainer">
+        <div class="sliderLabel">
+          <p>$0</p>
+          <p><span class="boldSpan">Funeral:</span>$<span id="demo4"></span></p>
+          <p>$100k</p>
+        </div>
+        <input class="slider4 slider-progress" type="range" min="0" max="100000" value="0" id="myRange4">
+      </div>
+
+    </div>
+
+    <div class="center-side canvas-con">
+      <!-- <p class="custom-label">Total Users</p> -->
+      <div class="canvas-con-inner">
+        <canvas id="myChart" height="250px"></canvas>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <h4>ADD MORE CATAGORIES</h4>
+      <div class="slidecontainer">
+        <div class="sliderLabel">
+          <p>$0</p>
+          <p><span class="boldSpan">Funeral:</span>$<span id="demo4"></span></p>
+          <p>$100k</p>
+        </div>
+        <input class="styled-slider slider-progress" type="range" min="0" max="100000" value="0" class="slider5"
+          id="myRange5">
+
+        <div class="slidecontainer">
+          <div class="sliderLabel">
+            <p>$0</p>
+            <p><span class="boldSpan">Funeral:</span>$<span id="demo4"></span></p>
+            <p>$100k</p>
+          </div>
+          <input class="styled-slider slider-progress" type="range" min="0" max="100000" value="0" class="slider5">
+        </div>
+
+      </div>
+
+      <script src="./content.js"></script>
+
+</body>
+
+</html>
